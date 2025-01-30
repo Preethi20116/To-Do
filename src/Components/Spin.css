@@ -1,0 +1,84 @@
+
+.circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 3px solid black;
+    overflow: hidden;
+    transition: transform 4s ease;
+}
+.partition-1 {
+    background-color: red;
+    transform: rotate(0deg);
+}
+.partition-2 {
+    background-color: aqua;
+    transform: rotate(45deg);
+}
+.partition-3 {
+    background-color: green;
+    transform: rotate(90deg);
+}
+.partition-4 {
+    background-color: yellow;
+    transform: rotate(135deg);
+}
+.partition-5 {
+    background-color: #0d2269;
+    transform: rotate(180deg);
+}
+.partition-6 {
+    background-color: rgb(238, 10, 78);
+    transform: rotate(225deg);
+}
+.partition-7 {
+    background-color: #4818b8;
+    transform: rotate(270deg);
+}
+.partition-8 {
+    background-color: rgb(125, 207, 18);
+    transform: rotate(315deg);
+}
+.text {
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    clip-path: polygon(40% 0, 100% 57%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: 0% 100%;
+}
+.spinbutton {
+    position: absolute;
+    top: 39%;
+    left: 12%;
+    height: 70px;
+    width: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: #e80ef0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow {
+    position: absolute;
+    bottom: 55%;
+    left: 16%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 20px solid #e80ef0;
+}
