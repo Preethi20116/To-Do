@@ -4,9 +4,9 @@
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 5px solid black;
     overflow: hidden;
-    transition: transform 4s ease;
+    transition: transform 0s;
 }
 .partition-1 {
     background-color: red;
@@ -60,8 +60,9 @@
 }
 .spinbutton {
     position: absolute;
-    top: 39%;
-    left: 12%;
+    top: 32%;
+    left: 9%;
+    margin: 50px;
     height: 70px;
     width: 70px;
     font-size: 16px;
@@ -73,12 +74,17 @@
 }
 .arrow {
     position: absolute;
-    bottom: 55%;
-    left: 16%;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-top: 20px solid #e80ef0;
+    top: 42%;
+    left: 17%;
+    width: 25px;
+    height: 25px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-color: #e80ef0;
 }
+.prize-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: green;
+}
+
+
