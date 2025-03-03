@@ -31,11 +31,11 @@ const Spinwheel = () => {
                 const finalAngle = spinDegree % 360;
                 const prizeText = Math.floor(finalAngle / sectordegree);
                 setSpinning(false);
-                setWinning (`You Won ${sectors[prizeText]}!`);
+                setWinning (`🎉🎉 Congratulations!  You Won ${sectors[prizeText]}!`);
                 alert (`You Won ${sectors[prizeText]}!`);
             },spinDuration);
         }
-    }, [spinning,sectors]);
+    }, [spinning,sectors,sectordegree]);
 
     const spinClick = () => {
         setSpinning(true);
@@ -43,7 +43,7 @@ const Spinwheel = () => {
     };
  
     return(
-        <div>
+        <div className="container">
             <h1 className="heading"> Spin Wheel Game </h1>
             <div className="circle" ref = {wheelRef}>
                 <div className="text partition-1">Jackpot</div>
@@ -57,6 +57,7 @@ const Spinwheel = () => {
             </div>
             <div className="arrow"></div>
             <button className="spinbutton" onClick={spinClick} >Spin</button>
+            {winning && (<h2 className="winning">{winning}</h2>)}
            
         </div>
     );

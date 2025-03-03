@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+  
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.logo {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.line {
+    text-decoration: none;
+    color: black;
+}
+.signin {
+    display: flex;
+    align-items: center;
+
+}
+.signin-icon {
+    width: 25px;
+    height: 25px;
+}
+.signincontainer {
+    display: flex;
+    margin-right: 84px;
+
+}
+.nav-links {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    right: 30px;
+    top: 7px;
+}
+.line:hover {
+    text-decoration: underline;
+}
+.vertical-line {
+    border-left: 1px solid gray;
+    height: 30px; 
+    margin: 0px; 
+}
+.search-container {
+    border: none;
+    background-color: rgb(247, 244, 244);
+    font-weight: bolder;
+    height: 35px;
+    margin: 10px;
+}
+.input-container {
+    position: relative;
+    width: fit-content;
+}
+.icon {
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    width: 20px;
+    height: auto;
+}
+.search-container {
+    padding-left: 30px;
+    font-weight: bolder;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}

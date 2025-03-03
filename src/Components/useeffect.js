@@ -2,7 +2,7 @@
 //import Parent from './Components/Parent';
 import { useState, useEffect } from "react";
 
-function App() {
+function Useeffect() {
   const [Increase, setIncrease] = useState(0);
   const [Decrease, setDecrease] = useState(10);
   useEffect(() => {
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default useEffect;
+export default Useeffect;
